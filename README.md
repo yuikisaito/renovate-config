@@ -1,23 +1,20 @@
-# vite-plus-starter
+# @yuikisaito/renovate-config
 
-A starter for creating a Vite Plus project.
+Personal shared [Renovate](https://docs.renovatebot.com/) configuration presets for
+[@yuikisaito](https://github.com/yuikisaito).
 
-## Development
+## Usage
 
-- Install dependencies:
+In your repository's Renovate configuration file (e.g. `renovate.json`, `.github/renovate.json`, or
+`.renovaterc.json`), extend this preset:
 
-```bash
-vp install
+```json
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>yuikisaito/renovate-config"]
+}
 ```
 
-- Run the unit tests:
+## License
 
-```bash
-vp test
-```
-
-- Build the library:
-
-```bash
-vp pack
-```
+MIT
