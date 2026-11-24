@@ -1,0 +1,26 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended", "group:allNonMajor", "group:vitePlus"],
+  "timezone": "Asia/Tokyo",
+  "schedule": ["* 18 * * 5"],
+  "minimumReleaseAge": "1 day",
+  "postUpdateOptions": ["pnpmDedupe"],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["* 18 * * 5"],
+    "automerge": true
+  },
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    },
+    {
+      "matchSourceUrls": [
+        "https://github.com/voidzero-dev/vite-plus",
+        "https://github.com/yuikisaito/**"
+      ],
+      "minimumReleaseAge": "0"
+    }
+  ]
+}
