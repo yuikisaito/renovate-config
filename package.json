@@ -13,14 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/yuikisaito/renovate-config.git"
   },
-  "files": [
-    "dist"
-  ],
   "type": "module",
-  "exports": {
-    ".": "./dist/index.mjs",
-    "./package.json": "./package.json"
-  },
   "scripts": {
     "check": "vp check"
   },
